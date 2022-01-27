@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
+  <script defer src="./fontawesome-free-5.15.4-web/js/all.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0;
+    }
+
+    .mySlides {
+      display: none;
+      z-index: -1;
+    }
+
+    img {
+      height: 100%;
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 10px;
+      padding: 23px 75px;
+      position: absolute;
+      bottom: 182px;
+      width: 100%;
+      left: 51px;
+    }
+
+    /* Title slide */
+    .titleslide {
+      color: #f2f2f2;
+      padding: 240px 123px;
+      position: relative;
+      font-size: 60px;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: black;
+      border-radius: 100%;
+      display: block;
+      transition: background-color 0.6s ease;
+      margin-bottom: 30px;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 0.6s;
+      animation-name: fade;
+      animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px;
+      }
+    }
+
+    .row {
+      position: fixed;
+      display: flex;
+      width: 100%;
+      animation: none;
+      z-index: 100;
+    }
+
+    #menu {
+      margin: auto;
+      width: 50%;
+      font-family: "Roboto Condensed", sans-serif;
+      color: white;
+      text-decoration: none;
+    }
+
+    #logo {
+      margin: auto;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 40px;
+      color: white;
+      animation: none;
+      text-decoration: none;
+    }
+
+    #search {
+      margin: auto;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+
+    .changeimg {
+      position: absolute;
+      left: 1330px;
+      bottom: 150px;
+      font-size: 50px;
+    }
+
+    .btn2 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: #ffffff;
+      display: inline-block;
+      padding: 10px 26px 10px 26px;
+      position: relative;
+      border-radius: 8px;
+      background-color: red;
+      left: 121px;
+      top: -144px;
+    }
+    .dotList{
+      position: fixed;
+      top: 235px;
+      left: 190px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start header -->
+  <div class="container-fluid">
+    <div class="header">
+      <div class="row">
+        <div class="col-lg-3" id="logo">
+          <a style="text-decoration: none" href="#">Motor</a>
+        </div>
+
+        <div class="col-lg-6" id="menu">
+          <a style="margin-left: 40px; text-decoration: none" href="#">Home</a>
+          <a style="margin-left: 40px; text-decoration: none" href="#">Collection</a>
+          <a style="margin-left: 40px; text-decoration: none" href="#">Helmets & Suits</a>
+          <a style="margin-left: 40px; text-decoration: none" href="#">Test Track</a>
+          <a style="margin-left: 40px; text-decoration: none" href="#">Contact</a>
+        </div>
+
+        <div class="col-lg-3" id="search">
+          <input type="text" placeholder="Enter your search" />
+          <button style="background-color: black">
+            <i style="color: white" class="la la-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End header -->
+  <!-- Slide picture -->
+  <div class="slideshow-container-fluid">
+    <div class="mySlides fade">
+      <img src="img/328758.jpg" style="width: 100%" />
+      <div class="col-lg-6" style="position: fixed; top: -35px; left: 126px">
+        <div class="titleslide">1 / 4</div>
+        <div class="text">Caption Text</div>
+        <a href="https://www.niemvuilaptrinh.com/" class="btn2">Explore -></a>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/ducati_1199.jpg" style="width: 100%" />
+      <div class="col-lg-6" style="position: fixed; top: -35px; left: 126px">
+        <div class="titleslide">DUCATI 1199</div>
+        <div class="text">DUCATI 1199</div>
+        <a href="https://www.niemvuilaptrinh.com/" class="btn2">Explore -></a>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/Ducati_StreetFigter.jpg" style="width: 100%" />
+      <div class="col-lg-6" style="position: fixed; top: -35px; left: 126px">
+        <div class="titleslide">
+          DUCATI <br />
+          STREETFIGHTER
+        </div>
+        <div class="text">DUCATI STREETFIGHTER</div>
+        <a href="https://www.niemvuilaptrinh.com/" class="btn2">Explore -></a>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/ducati_v4.jpg" style="width: 100%" />
+      <div class="col-lg-6" style="position: fixed; top: -35px; left: 126px">
+        <div class="titleslide">DUCATI V4</div>
+        <div class="text">
+          Now Superleggera V4 234hp on 152kg with racing kit. A record power
+          to weight ratio completed by GP16 extreme aerodymic design. Discover
+          the new Ducati V4
+        </div>
+        <a href="https://www.niemvuilaptrinh.com/" class="btn2">Explore -></a>
+      </div>
+    </div>
+    <!-- End slide -->
+
+    <!-- Button change slide -->
+    <div class="changeimg">
+      <a style="margin-right: 20px; text-decoration: none" onclick="plusSlides(-1)" href="#">
+        <i class="fas fa-angle-double-left" style="color: gray"></i>
+      </a>
+      <a style="margin-left: 20px; text-decoration: none" onclick="plusSlides(1)" href="#">
+        <i class="fas fa-angle-double-right" style="color: gray"></i>
+      </a>
+    </div>
+  </div>
+  <!-- End button -->
+
+  <div class="dotList">
+    <span class="dot" onclick="currentSlide(1)">1</span>
+    <span class="dot" onclick="currentSlide(2)">2</span>
+    <span class="dot" onclick="currentSlide(3)">3</span>
+    <span class="dot" onclick="currentSlide(4)">4</span>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+
+</html>
